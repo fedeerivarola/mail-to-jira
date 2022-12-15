@@ -5,8 +5,8 @@ import email
 
 def logon():
     print("Logging email")
-    email_user = 'federico.rivarola@vivatia.com' #input('federico.rivarola@vivatia.com')
-    email_pass = 'SoyPowa123' #input('SoyPowa123')
+    email_user = '' #input(mail)
+    email_pass = '' #input(passwd)
     mail = imaplib.IMAP4_SSL("outlook.office365.com",993)
     mail.login(email_user, email_pass)
     return mail
